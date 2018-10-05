@@ -27,7 +27,7 @@ table td + td + td + td {
     text-align: right;
 }
 
-th:first-child {
+table th:first-child {
     text-align: justify;
 }
 

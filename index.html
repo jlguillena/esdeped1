@@ -204,8 +204,12 @@
                 <label for="num_cursos_candidato_sni">núm. de cursos </label>
                 <input id="num_cursos_candidato_sni" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td rowspan="2"></td>
+            <td>
+                <input id="resultado_cursos_candidato_sni" class="resultados" type="text" width="3" readonly>
+            </td>
+            <td rowspan="2">
+                <input id="factor_3" class="resultados" type="text" width="2" readonly>
+            </td>
         </tr>
         <tr>
             <td>Nivel I, II, III y SNCA</td>
@@ -213,7 +217,9 @@
                 <label for="num_cursos_sni">núm. de cursos </label>
                 <input id="num_cursos_sni" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id="resultado_cursos_sni" class="resultados" type="text" width="2" readonly>
+            </td>
         </tr>
     </table>
 
@@ -231,14 +237,18 @@
         </tr>
         <tr>
             <td>
-                <input type="radio" id="input_ca_consolidacion" name="ptc_en_ca" value="1">
+                <input type="radio" class="ptc_en_ca" id="input_ca_consolidacion" name="ptc_en_ca" value="1">
                 <label for="input_ca_consolidacion">CA en consolidación </label>
-                <input type="radio" id="input_ca_consolidado" name="ptc_en_ca" value="2" style="margin-left:30px">
+
+                <input type="radio" class="ptc_en_ca" id="input_ca_consolidado" name="ptc_en_ca" value="2" style="margin-left:30px">
                 <label for="input_ca_consolidado">CA consolidado</label>
-                <input type="radio" id="input_sin_ca" name="ptc_en_ca" value="0" style="margin-left:30px" checked="checked">
+
+                <input type="radio" class="ptc_en_ca" id="input_sin_ca" name="ptc_en_ca" value="0" style="margin-left:30px" checked="checked">
                 <label for="input_sin_ca">Sin CA</label>
             </td>
-            <td></td>
+            <td>
+                <input id="factor_4" class="resultados" type="text" width="2" readonly>
+            </td>
         </tr>
     </table>
 
@@ -257,11 +267,15 @@
         </tr>
         <tr>
             <td>
-                <label for="num_cursos_lic_acreditados">núm. de cursos </label>
-                <input id="num_cursos_lic_acreditados" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
+                <label for="num_cursos_ciees">núm. de cursos </label>
+                <input id="num_cursos_ciees" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td></td>
+            <td>
+                <input id="resultado_cursos_ciees" type="text" class="resultados" width="2" readonly>
+            </td>
+            <td>
+                <input id="factor_5" type="text" class="resultados" width="2" readonly>
+            </td>
         </tr>
     </table>
 
@@ -285,8 +299,12 @@
                 <label for="num_patentes">núm. de patentes </label>
                 <input id="num_patentes" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td rowspan="3"></td>
+            <td>
+                <input id="resultado_patentes" class="resultados" type="text" width="2" readonly>
+            </td>
+            <td rowspan="3">
+                <input id="factor_6" class="resultados" type="text" width="3" readonly>
+            </td>
         </tr>
         <tr>
             <td>Modelos de utilidad o prototipos registrados ante el IMPI</td>
@@ -294,7 +312,9 @@
                 <label for="num_prototipos">número</label>
                 <input id="num_prototipos" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id="resultado_prototipos" class="resultados" width="2" type="text" readonly>
+            </td>
         </tr>
         <tr>
             <td>Desarrollo de software u obras registradas ante INDAUTOR</td>
@@ -302,7 +322,9 @@
                 <label for="num_obras">número</label>
                 <input id="num_obras" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id="resultado_obras" class="resultados" type="text" width="3" readonly>
+            </td>
         </tr>
     </table>
 
@@ -322,8 +344,12 @@
                 <label for="num_cursos_lengua_extranjera">número de cursos </label>
                 <input id="num_cursos_lengua_extranjera" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td></td>
+            <td>
+                <input id="resultado_cursos_lengua_extranjera" type="text" class="resultados" width="3" readonly>
+            </td>
+            <td>
+                <input id="factor_7" type="text" class="resultados" width="3" readonly>
+            </td>
         </tr>
     </table>
 
@@ -345,8 +371,12 @@
                 <label for="num_cursos_posgrado_int">número de cursos</label>
                 <input id="num_cursos_posgrado_int" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td></td>
+            <td>
+                <input id="resultado_cursos_posgrado_int" class="resultados" type="text" width="3" readonly>
+            </td>
+            <td>
+                <input id="factor_8" class="resultados" type="text" width="3" readonly>
+            </td>
         </tr>
     </table>
 
@@ -369,15 +399,21 @@
             <td><label for="num_cursos_RSU_40">núm. de cursos</label>
                 <input id="num_cursos_RSU_40" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td rowspan="2"></td>
+            <td>
+                <input id="resultado_cursos_RSU_40" type="text" class="resultados" width="3" readonly>
+            </td>
+            <td rowspan="2">
+                <input id="factor_9" type="text" class="resultados" width="3" readonly>
+            </td>
         </tr>
         <tr>
             <td>Curso mínimo 20 horas</td>
             <td><label for="num_cursos_RSU_20">núm. de cursos</label>
                 <input id="num_cursos_RSU_20" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id="resultado_cursos_RSU_20" type="text" class="resultados" width="3" readonly>
+            </td>
         </tr>
     </table>
 
@@ -401,8 +437,12 @@
                 <label for="num_estancias">número</label>
                 <input id="num_estancias" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
-            <td rowspan="4"></td>
+            <td>
+                <input id="resultado_estancias" class="resultados" type="text" width="3" readonly>
+            </td>
+            <td rowspan="4">
+                <input id="factor_10" class="resultados" type="text" width="3" readonly>
+            </td>
         </tr>
         <tr>
             <td>Estancias Sabáticas, mínimo un semestre</td>
@@ -410,7 +450,9 @@
                 <label for="num_estancias_sabaticas">número</label>
                 <input id="num_estancias_sabaticas" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id="resultado_estancias_sabaticas" type="text" class="resultados" width="3" readonly>
+            </td>
         </tr>
         <tr>
             <td>Impartición de cursos curriculares en el extranjero, sin remuneración, en el idioma del país en cuestión</td>
@@ -418,7 +460,9 @@
                 <label for="num_cursos_extranjero">núm. de cursos</label>
                 <input id="num_cursos_extranjero" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id="resultado_cursos_extranjero" class="resultados" type="text" width="3" readonly>
+            </td>
         </tr>
         <tr>
             <td>Presentación oral en congresos en el extranjero</td>
@@ -426,7 +470,9 @@
                 <label for="num_presentacion">número</label>
                 <input id="num_presentacion" type="number" width="2" min="0" max="10" value="0" pattern="[09]">
             </td>
-            <td></td>
+            <td>
+                <input id ="resultado_presentacion" type="text" class="resultados" width="3" readonly>
+            </td>
         </tr>
     </table>
 
