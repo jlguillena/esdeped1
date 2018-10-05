@@ -1,0 +1,67 @@
+.descripcion{
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+table {
+    background-color: #ffffff;
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 740px;
+    margin:0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+th{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+table, td, th{
+    border: 1pt solid lightblue;
+    padding: 2px;
+}
+table td + td + td + td {
+    text-align: right;
+}
+
+th:first-child {
+    text-align: justify;
+}
+
+.resultados {
+    text-align: right;
+    font-size: 12pt;
+    width: 30px;
+    border: none;
+}
+
+.col_resultados {
+    width: 85px;
+}
+
+.col_resultados td:last-child {
+    text-align: right;
+}
+
+.col_cantidad {
+    width: 180px;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+.encabezado{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #2a93c1;
+    width:830px;
+    margin:40px auto 10px;
+}
